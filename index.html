@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<title>&lt;model-viewer&gt; template</title>	
+  <meta charset="utf-8">	
+<head>
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"></script>  
+  <link href='https://fonts.googleapis.com/css?family=Amaranth' rel='stylesheet'>
+  <style>
+  model-viewer{
+	  width: 2000px;
+  	  height: 1800px;
+	  }
+  body{
+      background-color: rgb(0,155,221);
+     font-family: 'Amaranth', font-size: 22px;
+    text-align: center;
+	 }
+  </style>
+	<model-viewer...></model-viewer>
+  </head>
+  <body>
+    <!-- <model-viewer> HTML element -->
+    <h1>Retail Development welcomes you to NSM 2023!</h1>  
+	  
+<model-viewer src="4way.NSM.V1.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="4" camera-orbit="-1.237deg 85.21deg 2.308m" field-of-view="23.2deg">
+    <div class="progress-bar hide" slot="progress-bar">
+        <div class="update-bar"></div>
+	</model-viewer>
+</body>
+</html>
