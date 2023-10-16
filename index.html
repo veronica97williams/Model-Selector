@@ -10,7 +10,7 @@
   <body>
     <!-- <model-viewer> HTML element -->
 <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.3.0/model-viewer.min.js"></script>
-<model-viewer src="Hershey.D88614.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="1" ar camera-controls touch-action="pan-y" alt="A 3D model carousel">
+<model-viewer src="Hershey Models/Hershey.D88614.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="Hershey Models/Hershey.D88614.webp" shadow-intensity="1" ar camera-controls touch-action="pan-y" alt="A 3D model carousel">
   <button slot="ar-button" id="ar-button">
     View in your space
   </button>
@@ -25,9 +25,9 @@
 
   <div class="slider">
     <div class="slides">
-      <button class="slide selected" onclick="switchSrc(this, 'Hershey.D88614')" style="background-image: url('Hershey.D88614.webp');">
+      <button class="slide selected" onclick="switchSrc(this, 'Hershey.D88614')" style="background-image: url('Hershey Models/Hershey.D88614.webp');">
 
-      </button><button class="slide" onclick="switchSrc(this, 'Hershey.Astronaut')" style="background-image: url('Hershey.Astronaut');">
+      </button><button class="slide" onclick="switchSrc(this, 'Hershey.Astronaut')" style="background-image: url('Hershey Models/Hershey.Astronaut.webp');">
  
     </button></div>
   </div>
@@ -37,7 +37,7 @@
   const modelViewer = document.querySelector("model-viewer");
 
   window.switchSrc = (element, name) => {
-    const base = "Hershey." + name;
+    const base = "Hershey Models/" + name;
     modelViewer.src = base + '.glb';
     modelViewer.poster = base + '.webp';
     const slides = document.querySelectorAll(".slide");
